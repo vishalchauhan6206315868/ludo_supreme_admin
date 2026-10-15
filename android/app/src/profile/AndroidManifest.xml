@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- INTERNET: development me Flutter tool ko bhi chahiye. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Sirf debug/profile build me plain http:// (LAN backend) allowed.
+         Release build me HTTPS use karo (ya --dart-define=API_BASE_URL=https://...). -->
+    <application android:usesCleartextTraffic="true"/>
+</manifest>
